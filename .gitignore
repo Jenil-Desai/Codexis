@@ -51,12 +51,7 @@ bin/
 out/
 
 # NetBeans
-nbproject/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
+nbproject/private/
 
 # VSCode
 .vscode/
