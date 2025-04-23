@@ -23,9 +23,9 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Quick Actions</h5>
                                     <div class="d-grid gap-2 mt-3">
-                                        <button class="btn btn-outline-primary text-start">
-                                            <i class="bi bi-plus-circle me-2"></i> Create New Snippet
-                                        </button>
+                                        <button class="btn btn-outline-primary text-start" onclick="window.location.href='addSnippet.jsp'">
+                                               <i class="bi bi-plus-circle me-2"></i> Create New Snippet
+                                         </button>
                                         <button class="btn btn-outline-primary text-start">
                                             <i class="bi bi-upload me-2"></i> Import Code
                                         </button>

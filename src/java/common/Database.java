@@ -9,7 +9,7 @@ public class Database {
     public static Connection connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/codexis", "root", "root");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/codexis", "root", "");
             return connection;
         } catch (Exception e) {
             throw new RuntimeException(e);

@@ -7,6 +7,11 @@
             <minimum-ant-version>1.6.5</minimum-ant-version>
             <web-module-libraries>
                 <library dirs="200">
+<<<<<<< HEAD
+                    <file>${libs.mysql.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+=======
                     <file>${libs.JDBC_MYSQL.classpath}</file>
                     <path-in-war>WEB-INF/lib</path-in-war>
                 </library>
@@ -14,6 +19,7 @@
                     <file>${libs.Java_DotEnv.classpath}</file>
                     <path-in-war>WEB-INF/classes</path-in-war>
                 </library>
+>>>>>>> e0f6ab5ef9f2617427b84ba64a1f15fe164236af
             </web-module-libraries>
             <web-module-additional-libraries/>
             <source-roots>
