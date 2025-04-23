@@ -45,7 +45,7 @@ Codexis is a smart code snippet platform built for developers who want to:
 - **JDBC** – Java Database Connectivity for MySQL
 - **Bootstrap** - Frontend Styling
 - **Highlight.js** - Syntax highlighter
-- **Monaco Editor** - 
+- **Monaco Editor** - Code Editor
 
 ---
 
