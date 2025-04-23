@@ -14,7 +14,7 @@
             <p class="text-secondary text-uppercase small fw-bold mb-2">Navigation</p>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a href="dashboard.html" class="nav-link active d-flex align-items-center">
+                    <a href="dashboard.jsp" class="nav-link active d-flex align-items-center">
                         <i class="bi bi-house me-3"></i>
                         <span>Dashboard</span>
                     </a>
@@ -67,7 +67,7 @@
     <div class="sidebar-footer border-top border-secondary p-3">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a href="new-snippet.html" class="nav-link text-white d-flex align-items-center">
+                <a href="addSnippet.jsp" class="nav-link text-white d-flex align-items-center">
                     <i class="bi bi-plus-circle me-3"></i>
                     <span>New Snippet</span>
                 </a>

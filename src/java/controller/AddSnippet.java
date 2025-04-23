@@ -24,17 +24,14 @@ public class AddSnippet extends HttpServlet {
 
 
         SnippetServices snippetServices = new SnippetServices();
-        Response res = snippetServices.saveSnippet(title, language, description, code, tags);
+        Response result = snippetServices.saveSnippet(title, language, description, code, tags);
         
-        if (res.isSuccess()) {
-            response.sendRedirect("snippets.jsp"); 
-        } else {
-            response.getWriter().println("<h3>" + res.getMessage() + "</h3>");
+        if (!result.isSuccess()) {
+            request.setAttribute("errorMessage", result.getMessage());
+            request.getRequestDispatcher("addSnippet.jsp").forward(request, response);
+            return;
         }
         
-        response.setContentType("text/html");
-        response.getWriter().println("<h3>" + res.getMessage() + "</h3>");
-        
-        
+        response.sendRedirect("dashboard.jsp");
     }
 }
