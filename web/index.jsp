@@ -13,11 +13,11 @@
                         <h1 class="display-3 fw-bold mb-4">
                             Code Smarter, <span class="text-primary">Not Harder.</span>
                         </h1>
-                        <p class="lead text-secondary mb-4">
+                        <p class="lead text-white mb-4">
                             Manage your code snippets with AI-powered insights, syntax highlighting, and seamless organization. Boost your productivity and write better code with Codexis.
                         </p>
                         <div class="d-flex flex-wrap gap-3">
-                            <a href="register.html" class="btn btn-primary btn-lg">
+                            <a href="register.jsp" class="btn btn-primary btn-lg">
                                 Get Started Free <i class="bi bi-arrow-right ms-2"></i>
                             </a>
                             <a href="#demo" class="btn btn-outline-light btn-lg">
@@ -31,7 +31,7 @@
                                 <img src="https://randomuser.me/api/portraits/men/67.jpg" class="rounded-circle border border-2 border-dark ms-n2" width="40" height="40" alt="User">
                             </div>
                             <div class="ms-3">
-                                <p class="mb-0 text-secondary"><span class="text-primary fw-bold">5,000+</span> developers trust Codexis</p>
+                                <p class="mb-0 text-white"><span class="text-primary fw-bold">5,000+</span> developers trust Codexis</p>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="position-relative">
                             <div class="card border-0 shadow-lg overflow-hidden">
                                 <div class="card-body p-0">
-                                    <img src="https://via.placeholder.com/800x500/0d1b2a/778da9?text=Codexis+Dashboard" class="img-fluid" alt="Codexis Dashboard">
+                                    <img src="./public/screenshots/Dashboard.png" class="img-fluid" alt="Codexis Dashboard">
                                 </div>
                             </div>
                             <div class="position-absolute top-0 end-0 translate-middle-y me-n5 d-none d-xl-block">

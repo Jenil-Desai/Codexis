@@ -74,7 +74,7 @@
             require(["vs/editor/editor.main"], function () {
                 editor = monaco.editor.create(document.getElementById('editor'), {
                     value: "// Enter your code here",
-                    language: "javascript",
+                    language: "python",
                     theme: "vs-dark",
                     automaticLayout: true
                 });
