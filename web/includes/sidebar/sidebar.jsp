@@ -14,7 +14,7 @@
             <p class="text-secondary text-uppercase small fw-bold mb-2">Navigation</p>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a href="dashboard.jsp" class="nav-link active d-flex align-items-center">
+                    <a href="dashboard" class="nav-link active d-flex align-items-center">
                         <i class="bi bi-house me-3"></i>
                         <span>Dashboard</span>
                     </a>

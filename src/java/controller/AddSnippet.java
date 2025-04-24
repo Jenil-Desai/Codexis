@@ -40,6 +40,6 @@ public class AddSnippet extends HttpServlet {
             return;
         }
         
-        response.sendRedirect("dashboard.jsp");
+        response.sendRedirect("dashboard");
     }
 }

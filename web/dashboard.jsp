@@ -23,9 +23,9 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Quick Actions</h5>
                                     <div class="d-grid gap-2 mt-3">
-                                        <button class="btn btn-outline-primary text-start" onclick="window.location.href='addSnippet.jsp'">
-                                               <i class="bi bi-plus-circle me-2"></i> Create New Snippet
-                                         </button>
+                                        <button class="btn btn-outline-primary text-start" onclick="window.location.href = 'addSnippet.jsp'">
+                                            <i class="bi bi-plus-circle me-2"></i> Create New Snippet
+                                        </button>
                                         <button class="btn btn-outline-primary text-start">
                                             <i class="bi bi-upload me-2"></i> Import Code
                                         </button>
@@ -71,28 +71,28 @@
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between align-items-center mb-1 small">
                                                 <span>Total Snippets</span>
-                                                <span class="fw-medium">24</span>
+                                                <span class="fw-medium"><%= request.getAttribute("totalSnippets")%></span>
                                             </div>
                                             <div class="progress" style="height: 8px;">
-                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 80%"></div>
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: <%= (Integer) request.getAttribute("totalSnippets")%>%"></div>
                                             </div>
                                         </div>
                                         <div class="mb-3">
                                             <div class="d-flex justify-content-between align-items-center mb-1 small">
                                                 <span>AI Enhanced</span>
-                                                <span class="fw-medium">16</span>
+                                                <span class="fw-medium"><%= request.getAttribute("totalAiEnhancedSnippets")%></span>
                                             </div>
                                             <div class="progress" style="height: 8px;">
-                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 60%"></div>
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: <%= request.getAttribute("totalAiEnhancedSnippets")%>%"></div>
                                             </div>
                                         </div>
                                         <div>
                                             <div class="d-flex justify-content-between align-items-center mb-1 small">
-                                                <span>Recently Used</span>
-                                                <span class="fw-medium">8</span>
+                                                <span>Non Enhanced</span>
+                                                <span class="fw-medium"><%= request.getAttribute("totalNonEnhancedSnippets")%></span>
                                             </div>
                                             <div class="progress" style="height: 8px;">
-                                                <div class="progress-bar bg-primary" role="progressbar" style="width: 30%"></div>
+                                                <div class="progress-bar bg-primary" role="progressbar" style="width: <%= request.getAttribute("totalNonEnhancedSnippets")%>%"></div>
                                             </div>
                                         </div>
                                     </div>
