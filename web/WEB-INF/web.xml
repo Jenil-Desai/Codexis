@@ -20,6 +20,10 @@
         <servlet-name>Dashboard</servlet-name>
         <servlet-class>controller.Dashboard</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Snippets</servlet-name>
+        <servlet-class>controller.Snippets</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Register</servlet-name>
         <url-pattern>/register</url-pattern>
@@ -35,5 +39,9 @@
     <servlet-mapping>
         <servlet-name>Dashboard</servlet-name>
         <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Snippets</servlet-name>
+        <url-pattern>/snippets</url-pattern>
     </servlet-mapping>
 </web-app>

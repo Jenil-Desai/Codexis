@@ -5,9 +5,44 @@ import models.Response;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
+import models.Snippets;
 
 public class SnippetServices {
+    
+    final public Response<List<Snippets>> getAllSnippet() {
+        List<Snippets> snippetsList = new ArrayList<>();
+
+        try {
+            Connection con = Database.connect();
+            String qry = "SELECT snippet.*, users.first_name, users.last_name FROM `snippet` INNER JOIN users ON snippet.userId = users.id";
+            PreparedStatement pr = con.prepareStatement(qry);
+            ResultSet rs = pr.executeQuery();
+
+            while (rs.next()) {
+                String id = rs.getString("id");
+                String title = rs.getString("title");
+                String lang = rs.getString("language");
+                String des = rs.getString("des");
+                String code = rs.getString("code");
+                String tag = rs.getString("tage");
+                boolean enhanced = rs.getBoolean("enhanced");
+                String fname = rs.getString("first_name");
+                String lname = rs.getString("last_name");
+
+                Snippets snippet = new Snippets(id, title, lang, des, code, tag, enhanced,fname,lname);
+                snippetsList.add(snippet);
+            }
+
+            return new Response<List<Snippets>>(true,"",snippetsList);
+        } catch (Exception e) {
+            return new Response(false,"Something Went Wrong : " + e.getMessage());
+        } finally {
+            Database.disconnect();
+        }
+    }
 
     final public Response saveSnippet(String title, String language, String description, String code, String tags,String userId) {
         Connection con;
